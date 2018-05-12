@@ -1,6 +1,13 @@
 # Editor.md
+<br>
 
 # Demo: https://coddec.github.io/editor.md
+<br>
+
+# Founder:
+# https://pandao.github.io/editor.md/
+
+# https://github.com/pandao/editor.md
 
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 
