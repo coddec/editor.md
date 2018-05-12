@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Editor.md</title>
+		<link rel="stylesheet" href="../lib/codemirror/codemirror.min.css" />
+		<link rel="stylesheet" href="../css/editormd.min.css" />
+    </head>
+    <body>
+        <div id="editormd">
+			<textarea style="display:none;">### Hello Editor.md ! [Example](eg.htm "Example")</textarea>
+		</div>
+		<script src="js/jquery.min.js"></script>
+        <script src="../editormd.js"></script>
+		<script type="text/javascript">
+			var myHeight = $(window).height();
+			$(function() {
+				var editor = editormd("editormd", {
+					width : "100%",
+					height : myHeight - 25,
+					path : "../lib/", // Autoload modules mode, codemirror, marked... dependents libs path
+					codeFold : true,
+					saveHTMLToTextarea : true,
+					searchReplace : true,
+					emoji : true,
+					taskList : true,
+					tocm : true,
+					tex : true,
+					previewCodeHighlight : true,
+					flowChart : true,
+					sequenceDiagram : true,
+				});
+
+				/*
+				// or
+				var editor = editormd({
+					id   : "editormd",
+					path : "../lib/"
+				});
+				*/
+			});
+		</script>
+    </body>
+</html>
